@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task1 - Tymoteusz Piwowarski, Wojciech Mokwiński</title>
+  </head>
+  <body>
+    <h1>Theoretical Overview</h1>
+
+    <h2>1.1 Describe ISO/OSI model and protocol assignment</h2>
+    <p>The OSI model defines seven layers:</p>
+    <p>
+      The OSI (Open Systems Interconnection) model is a conceptual framework
+      used to understand how different protocols communicate over a network. It
+      consists of seven layers:
+    </p>
+
+    <h3>Physical Layer</h3>
+    <p>
+      The physical layer is the lowest layer in the OSI model. It deals with the
+      transmission and reception of raw data bits over a physical medium, such
+      as copper wires, optical fibers, or wireless channels. It defines the
+      physical characteristics of the transmission medium, including connectors,
+      voltage levels, and data transmission rates.
+    </p>
+
+    <h3>Data Link Layer</h3>
+    <p>
+      The data link layer establishes and maintains a reliable link between two
+      adjacent nodes connected by a physical layer. It ensures error-free
+      transmission of data by providing framing, error detection, and, if
+      possible, correction. It also manages access to the physical medium,
+      resolves hardware addresses (MAC addresses), and controls data flow
+      between devices.
+    </p>
+
+    <h3>Network Layer</h3>
+    <p>
+      The network layer facilitates communication between different networks. It
+      is responsible for logical addressing, routing packets across multiple
+      networks, and determining the best path for data to reach its destination.
+      The Internet Protocol (IP) operates at this layer, and it enables
+      internetwork communication.
+    </p>
+
+    <h3>Transport Layer</h3>
+    <p>
+      The transport layer ensures end-to-end communication between host devices.
+      It segments and reassembles data into smaller units known as segments,
+      provides error checking, flow control, and ensures data integrity. It
+      includes protocols like Transmission Control Protocol (TCP) and User
+      Datagram Protocol (UDP).
+    </p>
+
+    <h3>Session Layer</h3>
+    <p>
+      The session layer establishes, maintains, and terminates communication
+      sessions between applications on different devices. It manages the dialog
+      control and synchronization between presentation layer entities, allowing
+      for efficient data exchange.
+    </p>
+
+    <h3>Presentation Layer</h3>
+    <p>
+      The presentation layer is responsible for data translation, encryption,
+      compression, and formatting. It ensures that data exchanged between
+      applications is readable, regardless of the differences in data
+      representation across different systems.
+    </p>
+
+    <h3>Application Layer</h3>
+    <p>
+      The application layer is the topmost layer and interacts directly with the
+      end-user. It provides network services directly to applications, allowing
+      users to access network resources and services. Various protocols such as
+      HTTP, FTP, SMTP, and DNS operate at this layer, enabling specific
+      application functionalities.
+    </p>
+
+    <h2>1.2. Protocol Data Units for Layers</h2>
+    <ul>
+      <li>Physical Layer - Bits</li>
+      <li>Data Link Layer - Frames</li>
+      <li>Network Layer - Packets</li>
+      <li>Transport Layer - Segments</li>
+      <li>Session Layer - Data</li>
+      <li>Presentation Layer - Data</li>
+      <li>Application Layer - Messages</li>
+    </ul>
+
+    <h2>1.3. Protocol Assignments</h2>
+    <table>
+      <tr>
+        <th>Protocol</th>
+        <th>Layer</th>
+      </tr>
+
+      <tr>
+        <td>ARP</td>
+        <td>Data Link Layer</td>
+      </tr>
+
+      <tr>
+        <td>HTTP</td>
+        <td>Application Layer</td>
+      </tr>
+    </table>
+  </body>
+</html>
