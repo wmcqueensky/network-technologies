@@ -1,92 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task1 - Tymoteusz Piwowarski, Wojciech Mokwiński</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <h1>Theoretical Overview</h1>
 
     <h2>1.1 Describe ISO/OSI model and protocol assignment</h2>
     <p>The OSI model defines seven layers:</p>
     <p>
-      The OSI (Open Systems Interconnection) model is a conceptual framework
-      used to understand how different protocols communicate over a network. It
-      consists of seven layers:
+        The OSI (Open Systems Interconnection) model is a conceptual framework
+        used to understand how different protocols communicate over a network. It
+        consists of seven layers:
     </p>
 
     <h3>Physical Layer</h3>
     <p>
-      The physical layer is the lowest layer in the OSI model. It deals with the
-      transmission and reception of raw data bits over a physical medium, such
-      as copper wires, optical fibers, or wireless channels. It defines the
-      physical characteristics of the transmission medium, including connectors,
-      voltage levels, and data transmission rates.
+        The physical layer is the lowest layer in the OSI model. It deals with the
+        transmission and reception of raw data bits over a physical medium, such
+        as copper wires, optical fibers, or wireless channels. It defines the
+        physical characteristics of the transmission medium, including connectors,
+        voltage levels, and data transmission rates.
     </p>
 
     <h3>Data Link Layer</h3>
     <p>
-      The data link layer establishes and maintains a reliable link between two
-      adjacent nodes connected by a physical layer. It ensures error-free
-      transmission of data by providing framing, error detection, and, if
-      possible, correction. It also manages access to the physical medium,
-      resolves hardware addresses (MAC addresses), and controls data flow
-      between devices.
+        The data link layer establishes and maintains a reliable link between two
+        adjacent nodes connected by a physical layer. It ensures error-free
+        transmission of data by providing framing, error detection, and, if
+        possible, correction. It also manages access to the physical medium,
+        resolves hardware addresses (MAC addresses), and controls data flow
+        between devices.
     </p>
 
     <h3>Network Layer</h3>
     <p>
-      The network layer facilitates communication between different networks. It
-      is responsible for logical addressing, routing packets across multiple
-      networks, and determining the best path for data to reach its destination.
-      The Internet Protocol (IP) operates at this layer, and it enables
-      internetwork communication.
+        The network layer facilitates communication between different networks. It
+        is responsible for logical addressing, routing packets across multiple
+        networks, and determining the best path for data to reach its destination.
+        The Internet Protocol (IP) operates at this layer, and it enables
+        internetwork communication.
     </p>
 
     <h3>Transport Layer</h3>
     <p>
-      The transport layer ensures end-to-end communication between host devices.
-      It segments and reassembles data into smaller units known as segments,
-      provides error checking, flow control, and ensures data integrity. It
-      includes protocols like Transmission Control Protocol (TCP) and User
-      Datagram Protocol (UDP).
+        The transport layer ensures end-to-end communication between host devices.
+        It segments and reassembles data into smaller units known as segments,
+        provides error checking, flow control, and ensures data integrity. It
+        includes protocols like Transmission Control Protocol (TCP) and User
+        Datagram Protocol (UDP).
     </p>
 
     <h3>Session Layer</h3>
     <p>
-      The session layer establishes, maintains, and terminates communication
-      sessions between applications on different devices. It manages the dialog
-      control and synchronization between presentation layer entities, allowing
-      for efficient data exchange.
+        The session layer establishes, maintains, and terminates communication
+        sessions between applications on different devices. It manages the dialog
+        control and synchronization between presentation layer entities, allowing
+        for efficient data exchange.
     </p>
 
     <h3>Presentation Layer</h3>
     <p>
-      The presentation layer is responsible for data translation, encryption,
-      compression, and formatting. It ensures that data exchanged between
-      applications is readable, regardless of the differences in data
-      representation across different systems.
+        The presentation layer is responsible for data translation, encryption,
+        compression, and formatting. It ensures that data exchanged between
+        applications is readable, regardless of the differences in data
+        representation across different systems.
     </p>
 
     <h3>Application Layer</h3>
     <p>
-      The application layer is the topmost layer and interacts directly with the
-      end-user. It provides network services directly to applications, allowing
-      users to access network resources and services. Various protocols such as
-      HTTP, FTP, SMTP, and DNS operate at this layer, enabling specific
-      application functionalities.
+        The application layer is the topmost layer and interacts directly with the
+        end-user. It provides network services directly to applications, allowing
+        users to access network resources and services. Various protocols such as
+        HTTP, FTP, SMTP, and DNS operate at this layer, enabling specific
+        application functionalities.
     </p>
 
     <h2>1.2. Protocol Data Units for Layers</h2>
     <ul>
-      <li>Physical Layer - Bits</li>
-      <li>Data Link Layer - Frames</li>
-      <li>Network Layer - Packets</li>
-      <li>Transport Layer - Segments</li>
-      <li>Session Layer - Data</li>
-      <li>Presentation Layer - Data</li>
-      <li>Application Layer - Messages</li>
+        <li>Physical Layer - Bits</li>
+        <li>Data Link Layer - Frames</li>
+        <li>Network Layer - Packets</li>
+        <li>Transport Layer - Segments</li>
+        <li>Session Layer - Data</li>
+        <li>Presentation Layer - Data</li>
+        <li>Application Layer - Messages</li>
     </ul>
 
     <h2>1.3. Protocol Assignments</h2>
@@ -206,18 +208,86 @@
     </table>
 
 
-<div class="images" style="width: 300px; height:300px">
-    <p>task 2.1</p>
-    <img style="width: 450px; height:300px" src="/network-technologies/task1/image/task2.1.png" alt="">
-    <p>task 2.2</p>
-    <img style="width: 600px; height:300px" src="/network-technologies/task1/image/task2.2.png" alt="źle">
-    <p>task 2.3</p>
-    <img style="width: 700px; height:300px" src="/network-technologies/task1/image/task2.3.png" alt="">
-    <p>task 2.4</p>
-    <img style="width: 900px; height:300px" src="/network-technologies/task1/image/task2.4.png" alt="">
-    <p>task 2.5</p>
-    <img style="width: 900px; height:200px" src="/network-technologies/task1/image/task2.5.png" alt="">
-</div>
-    
-  </body>
+    <div class="images" style="width: 100%; height:300px; display: block; float: left; margin-right: 20px;">
+        <h3>task 2.1</h3>
+        <img style="width: 450px; height:300px" src="/network-technologies/task1/image/task2.1.png" alt="">
+        <h3>task 2.2</h3>
+        <img style="width: 600px; height:300px" src="/network-technologies/task1/image/task2.2.png" alt="">
+        <h3>task 2.3</h3>
+        <img style="width: 700px; height:300px" src="/network-technologies/task1/image/task2.3.png" alt="">
+        <h3>task 2.4</h3>
+        <img style="width: 900px; height:300px" src="/network-technologies/task1/image/task2.4.png" alt="">
+        <h3>task 2.5</h3>
+        <img style="width: 900px; height:200px" src="/network-technologies/task1/image/task2.5.png" alt="">
+
+        <div style="margin: 20px 20px 20px 20px;">
+            <h3>task 2.8</h3>
+            <div class="text">
+                Several protocols are commonly used for file transfer, each serving different purposes and offering
+                various
+                features. Here are three widely used file transfer protocols:
+
+                File Transfer Protocol (FTP):
+
+                Purpose: FTP is one of the oldest and most traditional protocols used for transferring files over a
+                network. It
+                is often employed for website maintenance, software distribution, and general file sharing.
+                How it Works: FTP operates over two channels - a command channel (for sending commands) and a data
+                channel (for
+                transferring files). It can work in either active or passive mode. While FTP itself does not provide
+                encryption,
+                FTPS (FTP Secure) is a secured version that adds a layer of encryption using SSL/TLS.
+                Secure File Transfer Protocol (SFTP):
+
+                Purpose: SFTP is a secure version of FTP designed to provide encrypted file transfer and improved
+                security
+                features. It is often used for secure remote file access and management.
+                How it Works: SFTP operates over a secure channel using SSH (Secure Shell) for authentication and
+                encryption.
+                Unlike FTP, SFTP uses a single encrypted channel for both command and data.
+                Hypertext Transfer Protocol (HTTP) and Hypertext Transfer Protocol Secure (HTTPS):
+
+                Purpose: While HTTP and HTTPS are primarily used for transferring web content, they can also be used for
+                file
+                transfer, especially for downloading files from web servers.
+                How it Works: HTTP is the standard protocol for transferring hypertext (web pages) over the internet.
+                HTTPS is
+                the secure version of HTTP, employing SSL/TLS encryption to secure the data during transmission. While
+                not
+                specifically designed for file transfer, these protocols are commonly used for downloading files from
+                websites.
+                ISO/OSI Layers:
+                FTP:
+
+                ISO/OSI Layers:
+                Application Layer (Layer 7): FTP commands are application layer protocols.
+                Presentation Layer (Layer 6): FTP data can be encoded in different formats for transmission.
+                SFTP:
+
+                ISO/OSI Layers:
+                Application Layer (Layer 7): SFTP operates at the application layer, providing secure file transfer
+                services.
+                Presentation Layer (Layer 6): SFTP uses SSH for secure communication, which includes encryption and
+                compression.
+                HTTP and HTTPS:
+
+                ISO/OSI Layers:
+                Application Layer (Layer 7): HTTP and HTTPS operate at the application layer, facilitating the transfer
+                of web
+                content.
+                Presentation Layer (Layer 6): HTTPS adds a layer of encryption using SSL/TLS for secure communication.
+                Understanding the protocols and their respective ISO/OSI layers can provide insights into how data is
+                transferred and secured over a network. Depending on your specific requirements and security
+                considerations, you
+                can choose the appropriate protocol for your file transfer needs.
+            </div>
+
+
+            <h3>task 2.9</h3>
+        </div>
+
+
+
+</body>
+
 </html>
