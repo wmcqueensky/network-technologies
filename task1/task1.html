@@ -203,23 +203,51 @@
       </tr>
     </table>
 
-<<<<<<< HEAD
-    <h2>Use ping to check connection to web server Use Wireshark to find to list all protocols which are used during this communication. Assign abovementioned protocols to ISO/OSI layers.</h2>
-=======
+    <h3>2.5. Ping</h3>
+    <p>
+      ICMP, integral to the TCP/IP suite at the IP layer (Layer 3), operates
+      alongside IP processing. It's recognized as the protocol used by the
+      'ping' command for sending echo requests and receiving replies. However,
+      due to security concerns, many routers disable echo responses, affecting
+      the ping command's usefulness. ICMP's primary role is to report basic
+      packet delivery problems, including: Handling Maximum Transmission Unit
+      (MTU) limitations by fragmenting large packets or sending fragmentation
+      needed messages. Notifying about packet expiration after traversing
+      multiple hops (time exceeded error). Indicating when packets fail to reach
+      their destination (e.g., ARP broadcast mismatch). Communicating potential
+      routing issues, although routing protocols often handle this better.
+      Disabling certain ICMP functions, particularly route suggestion, is
+      advisable for security reasons, as routing protocols are more effective in
+      determining optimal routes. Formally defined in RFC 792, ICMP sets
+      standards for its implementation and usage within networks.
+    </p>
 
-<div class="images" style="width: 300px; height:300px">
-    <p>task 2.1</p>
-    <img style="width: 500px; height:300px" src="/network-technologies/task1/image/task2.1.png" alt="">
-    <p>task 2.2</p>
-    <img style="width: 700px; height:300px" src="/network-technologies/task1/image/task2.2.png" alt="źle">
-    <p>task 2.3</p>
-    <img style="width: 700px; height:300px" src="/network-technologies/task1/image/task2.3.png" alt="">
-    <p>task 2.4</p>
-    <img style="width: 900px; height:300px" src="/network-technologies/task1/image/task2.4.png" alt="">
-    <p>task 2.5</p>
-    <img style="width: 900px; height:200px" src="/network-technologies/task1/image/task2.5.png" alt="">
-</div>
-    
->>>>>>> 492a21807935b0ff10228739e82e214a40075a82
+    <h3>Screenshots</h3>
+
+    <div class="images" style="width: 300px; height: 300px">
+      <p>task 2.1</p>
+      <img style="width: 500px; height: 300px" src="image/task2.1.png" alt="" />
+      <p>task 2.2</p>
+      <img
+        style="width: 700px; height: 300px"
+        src="image/task2.2.png"
+        alt="źle"
+      />
+      <p>task 2.3</p>
+      <img style="width: 700px; height: 300px" src="image/task2.3.png" alt="" />
+      <p>task 2.4</p>
+      <img style="width: 900px; height: 300px" src="image/task2.4.png" alt="" />
+      <p>task 2.5</p>
+      <img
+        style="width: 1200px; height: 800px"
+        src="image/task2.5-1.png"
+        alt=""
+      />
+      <img
+        style="width: 1200px; height: 800px"
+        src="image/task2.5-2.png"
+        alt=""
+      />
+    </div>
   </body>
 </html>
