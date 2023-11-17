@@ -249,102 +249,114 @@
     <img style="width: 700px; height: 500px" src="image/2.6pass.png" alt="" />
     <img style="width: 700px; height: 500px" src="image/task2.6.2.png" alt="" />
     <img style="width: 700px; height: 500px" src="image/task2.6.3.png" alt="" />
+
     <table>
       <tr>
         <th>Protocol</th>
         <th>Layer</th>
       </tr>
       <tr>
-        <td>ARP (Address Resolution Protocol)</td>
-        <td>Data Link Layer</td>
-      </tr>
-      <tr>
         <td>DNS</td>
-        <td>Data Link Layer</td>
+        <td>Application Layer</td>
       </tr>
+
       <tr>
-        <td>ICMP</td>
-        <td>Data Link Layer</td>
+        <td>FTP</td>
+        <td>Application Layer</td>
       </tr>
+
       <tr>
-        <td>MDNS</td>
-        <td>Data Link Layer</td>
+        <td>TCP</td>
+        <td>Transport Layer</td>
       </tr>
+
+    </table>
+
+
+    <h3>task 2.7</h3>
+
+    <img style="width: 800px; height: 500px;" src="image/task2.7.png" alt="">
+    <img style="width: 800px; height: 500px;" src="image/2.7_scp.png" alt="">
+    <img style="width: 800px; height: 500px;" src="image/2.7_scp2.png" alt="">
+    <table>
       <tr>
-        <td>QUIC</td>
-        <td>Data Link Layer</td>
-      </tr>
-      <tr>
-        <td>SSH</td>
-        <td>Data Link Layer</td>
-      </tr>
-      <tr>
-        <td>SSHV2</td>
-        <td>Data Link Layer</td>
+        <th>Protocol</th>
+        <th>Layer</th>
       </tr>
       <tr>
         <td>TCP</td>
-        <td>Data Link Layer</td>
+        <td>Transport Layer</td>
       </tr>
-<<<<<<< HEAD
-      </table>
-      <div style="margin: 20px 20px 20px 20px">
-        <h3>task 2.8</h3>
-        <div class="text">
-            <ul>
-    <li>
-        <strong>FTP (File Transfer Protocol):</strong> 
-        FTP is one of the oldest and most widely used protocols for transferring files over a network. 
-        It operates on two channels: the command channel (used for sending commands) and the data channel (used for transferring files). 
-        FTP supports authentication and authorization mechanisms, but it lacks encryption, making it less secure for transmitting sensitive data.
-    </li>
-    <li>
-        <strong>SFTP (SSH File Transfer Protocol):</strong> 
-        SFTP is a secure file transfer protocol that runs over the SSH (Secure Shell) protocol, 
-        providing a secure connection for file transfer. 
-        It encrypts both commands and data, ensuring confidentiality and integrity. SFTP is commonly used for secure and reliable file transfers.
-    </li>
-    <li>
-        <strong>FTPS (File Transfer Protocol Secure):</strong> 
-        FTPS is an extension of FTP that adds support for Transport Layer Security (TLS) or Secure Sockets Layer (SSL) encryption. 
-        It offers authentication and encryption similar to SFTP but operates over separate control and data channels, providing security for FTP-based file transfers.
-    </li>
-    <li>
-        <strong>HTTP (Hypertext Transfer Protocol):</strong> 
-        While primarily used for web browsing, HTTP can also facilitate file transfers. 
-        However, it's less efficient than specialized file transfer protocols because it wasn't designed specifically for large file transfers.
-    </li>
-    <li>
-        <strong>HTTPS (Hypertext Transfer Protocol Secure):</strong> 
-        HTTPS is a secure version of HTTP that uses encryption (SSL/TLS) to secure data transmission. 
-        It's commonly used for secure web communication, including file downloads or uploads via websites.
-    </li>
-    <li>
-        <strong>SCP (Secure Copy Protocol):</strong> 
-        SCP is a secure file transfer protocol that uses SSH for data transfer and authentication. 
-        It allows secure copying of files between hosts on a network.
-    </li>
-    <li>
-        <strong>TFTP (Trivial File Transfer Protocol):</strong> 
-        TFTP is a simpler form of FTP, often used for transferring small amounts of data where simplicity 
-        and low overhead are more critical than advanced features.
-        However, TFTP lacks security features like authentication and encryption.
-    </li>
-    <li>
-        <strong>AS2 (Applicability Statement 2):</strong>
-        AS2 is a protocol used for secure and reliable data exchange between businesses over the internet. 
-        It employs digital certificates and encryption for data integrity and confidentiality.
-    </li>
-</ul>
-        </div>
 
-        <h3>task 2.9</h3>
-        <p></p>
+      <tr>
+        <td>SSH</td>
+        <td>Application Layer</td>
+      </tr>
+
+    </table>
+    <div>
+      <h3>task 2.8</h3>
+      <div class="text">
+        <ul>
+          <li>
+            <strong>FTP (File Transfer Protocol):</strong>
+            FTP is one of the oldest and most widely used protocols for transferring files over a network.
+            It operates on two channels: the command channel (used for sending commands) and the data channel (used for
+            transferring files).
+            FTP supports authentication and authorization mechanisms, but it lacks encryption, making it less secure for
+            transmitting sensitive data.
+          </li>
+          <li>
+            <strong>SFTP (SSH File Transfer Protocol):</strong>
+            SFTP is a secure file transfer protocol that runs over the SSH (Secure Shell) protocol,
+            providing a secure connection for file transfer.
+            It encrypts both commands and data, ensuring confidentiality and integrity. SFTP is commonly used for secure
+            and reliable file transfers.
+          </li>
+          <li>
+            <strong>FTPS (File Transfer Protocol Secure):</strong>
+            FTPS is an extension of FTP that adds support for Transport Layer Security (TLS) or Secure Sockets Layer
+            (SSL) encryption.
+            It offers authentication and encryption similar to SFTP but operates over separate control and data
+            channels, providing security for FTP-based file transfers.
+          </li>
+          <li>
+            <strong>HTTP (Hypertext Transfer Protocol):</strong>
+            While primarily used for web browsing, HTTP can also facilitate file transfers.
+            However, it's less efficient than specialized file transfer protocols because it wasn't designed
+            specifically for large file transfers.
+          </li>
+          <li>
+            <strong>HTTPS (Hypertext Transfer Protocol Secure):</strong>
+            HTTPS is a secure version of HTTP that uses encryption (SSL/TLS) to secure data transmission.
+            It's commonly used for secure web communication, including file downloads or uploads via websites.
+          </li>
+          <li>
+            <strong>SCP (Secure Copy Protocol):</strong>
+            SCP is a secure file transfer protocol that uses SSH for data transfer and authentication.
+            It allows secure copying of files between hosts on a network.
+          </li>
+          <li>
+            <strong>TFTP (Trivial File Transfer Protocol):</strong>
+            TFTP is a simpler form of FTP, often used for transferring small amounts of data where simplicity
+            and low overhead are more critical than advanced features.
+            However, TFTP lacks security features like authentication and encryption.
+          </li>
+          <li>
+            <strong>AS2 (Applicability Statement 2):</strong>
+            AS2 is a protocol used for secure and reliable data exchange between businesses over the internet.
+            It employs digital certificates and encryption for data integrity and confidentiality.
+          </li>
+        </ul>
       </div>
 
       <h3>task 2.9</h3>
       <p></p>
     </div>
+
+    <h3>task 2.9</h3>
+    <p></p>
+  </div>
   </div>
 </body>
 
