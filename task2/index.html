@@ -1,88 +1,495 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task2</title>
 
     <style>
-        img {
-            padding: 10px 10px 10px 10px;
-        }
+      table {
+        border: 1px solid #dddddd;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th,
+      td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+      th {
+        font-weight: 800;
+      }
 
-        .screenshots {
-            text-align: center;
-        }
+      img {
+        padding: 10px 10px 10px 10px;
+      }
+
+      .screenshots {
+        text-align: center;
+      }
+
+      .theory {
+        text-align: justify;
+      }
     </style>
-</head>
+  </head>
 
-<body style="background-color: rgb(4, 4, 49); color:white; padding: 50px 50px;">
-
+  <body
+    style="background-color: rgb(4, 4, 49); color: white; padding: 50px 50px"
+  >
     <div class="theory">
-        <h1 style="text-transform: uppercase; padding-bottom: 50px; text-align: center;">Theoretical Part</h1>
-        <h1>Task 1.1</h1>
-        <p></p>
-        <h1>Task 1.2</h1>
-        <p></p>
-        <h1>Task 1.3</h1>
-        <p></p>
-        <h1>Task 1.4</h1>
-        <p></p>
-        <h1>Task 1.5</h1>
-        <p></p>
-        <h1>Task 1.6</h1>
-        <p>
-            BOOTP is an internet protocol that lets a network user automatically be configured to receive an IP address and have an operating system booted without user involvement.
-        </p>
-        <h1>Task 1.7</h1>
-        <p>
-            A virtual LAN (VLAN) is a logical overlay network that groups together a subset of devices that share a
-            physical LAN, isolating the traffic for each group.
-            A VLAN, like the LAN it sits atop, operates at Layer 2 of the network, the Ethernet level. 
-            <br>
-            VLANs partition a single switched network into a set of overlaid virtual networks that can meet different functional and security requirements. This partitioning avoids the need to have multiple, distinct physical networks for different use cases.
+      <h1
+        style="
+          text-transform: uppercase;
+          padding-bottom: 50px;
+          text-align: center;
+        "
+      >
+        Theoretical Part
+      </h1>
+      <h1>Task 1.1</h1>
+      <h2>Ethernet Standards</h2>
 
+      <table>
+        <tr>
+          <th>Speed</th>
+          <th>Common Name</th>
+          <th>Informal IEEE Standard Name</th>
+          <th>Formal IEEE Standard Name</th>
+        </tr>
+        <tr>
+          <td>10 Mbps</td>
+          <td>Ethernet</td>
+          <td>10BASE-T</td>
+          <td>802.3</td>
+        </tr>
+        <tr>
+          <td>100 Mbps</td>
+          <td>FastEthernet</td>
+          <td>100BASE-T</td>
+          <td>802.3u</td>
+        </tr>
+        <tr>
+          <td>1 Gbps</td>
+          <td>GigabitEthernet</td>
+          <td>1000BASE-T</td>
+          <td>802.3ab</td>
+        </tr>
+        <tr>
+          <td>10 Gbps</td>
+          <td>10 GE</td>
+          <td>10GBASE-T</td>
+          <td>802.3an</td>
+        </tr>
+        <tr>
+          <td>40 Gbps</td>
+          <td>40 GE</td>
+          <td>40GBASE-T</td>
+          <td>Not defined</td>
+        </tr>
+      </table>
 
-            <br>
-            <br>
-            Network engineers use VLANs for multiple reasons, including the following:
-        <ul>
-            <li>to improve performance</li>
-            <li>to tighten security</li>
-            <li>to ease administration</li>
-        </ul>
+      <p>
+        Ethernet standards for the physical layer refer to the specifications
+        that define the physical characteristics of Ethernet networks, including
+        the cables, connectors, voltages, and signaling methods used to transmit
+        data over the network.
+      </p>
 
+      <p>
+        Ethernet limits generally refer to the maximum data transmission rates,
+        cable lengths, and other technical constraints imposed by each Ethernet
+        standard. For example:
+      </p>
 
+      <ul>
+        <li>
+          <strong>10BASE-T:</strong> Maximum data rate of 10 Mbps, cable length
+          limit of 100 meters.
+        </li>
+        <li>
+          <strong>100BASE-T:</strong> Maximum data rate of 100 Mbps, cable
+          length limit of 100 meters.
+        </li>
+        <li>
+          <strong>1000BASE-T:</strong> Maximum data rate of 1 Gbps, cable length
+          limit of 100 meters.
+        </li>
+        <li>
+          <strong>10GBASE-T:</strong> Maximum data rate of 10 Gbps, cable length
+          limit of 100 meters (though this might vary based on cable and
+          equipment).
+        </li>
+      </ul>
 
-        </p>
+      <p>
+        An Ethernet frame is the basic unit of data transmitted over an Ethernet
+        network. It consists of various fields that contain information such as
+        source and destination addresses, data payload, frame length, and
+        error-checking information like CRC (Cyclic Redundancy Check). The
+        typical structure of an Ethernet frame includes:
+      </p>
+
+      <p>
+        When data is broadcasted, the sender uses a special MAC address called
+        the broadcast address. In Ethernet networks, this address consists of
+        all binary 1s (FF:FF:FF:FF:FF:FF in hexadecimal notation) and indicates
+        that the data should be sent to all devices on the network. Any device
+        listening on the network will receive the broadcasted message, but only
+        the device that matches the intended criteria within the message will
+        process it.
+      </p>
+
+      <p>
+        Broadcasting is commonly used for various network tasks, such as address
+        resolution (like ARP - Address Resolution Protocol), discovering devices
+        on the network, or sending information that needs to be received by all
+        devices, like some types of network configuration or management
+        messages.
+      </p>
+
+      <ul>
+        <li>
+          <strong>Preamble:</strong> A sequence of bits used for synchronization
+          and indicating the start of the frame.
+        </li>
+        <li>
+          <strong>Destination and Source MAC Addresses:</strong> Identifiers
+          that specify the intended recipient and the sender of the frame.
+        </li>
+        <li>
+          <strong>Type or Length:</strong> Indicates the type of data or the
+          length of the frame.
+        </li>
+        <li>
+          <strong>Data Payload:</strong> The actual data being transmitted.
+        </li>
+        <li>
+          <strong>Frame Check Sequence (FCS):</strong> A CRC field used for
+          error detection.
+        </li>
+      </ul>
+
+      <p>
+        The frame structure might slightly differ based on the Ethernet standard
+        being used, but these components are fundamental to the structure of
+        Ethernet frames.
+      </p>
+
+      <h1>Task 1.2</h1>
+      <p>
+        A MAC address (media access control address) is a 12-digit hexadecimal
+        number assigned to each device connected to the network. Primarily
+        specified as a unique identifier during device manufacturing, the MAC
+        address is often found on a device's network interface card (NIC). A MAC
+        address is required when trying to locate a device or when performing
+        diagnostics on a network device. The MAC address belongs to the data
+        link layer of the Open Systems Interconnection (OSI) model, which
+        encapsulates the MAC address of the source and destination in the header
+        of each data frame to ensure node-to-node communication. Each network
+        interface in a device is assigned a unique MAC address, so it's possible
+        for a device to have more than one MAC address. For example, if a laptop
+        has both an Ethernet cable port and built-in Wi-Fi, there will be two
+        MAC addresses shown in the system configuration.
+      </p>
+
+      <p>
+        Broadcasting: On the other hand, when data is broadcasted, the sender
+        uses a special MAC address called the broadcast address. In Ethernet
+        networks, this address consists of all binary 1s (FF:FF:FF:FF:FF:FF in
+        hexadecimal notation) and indicates that the data should be sent to all
+        devices on the network. Any device listening on the network will receive
+        the broadcasted message, but only the device that matches the intended
+        criteria within the message will process it.
+      </p>
+
+      <h1>Task 1.3</h1>
+
+      <h2>Hub vs Switch vs Router</h2>
+
+      <table>
+        <tr>
+          <th>Hub</th>
+          <th>Switch</th>
+          <th>Router</th>
+        </tr>
+        <tr>
+          <td>Physical layer device - OSI Layer 1</td>
+          <td>Data link layer device - OSI Layer 2</td>
+          <td>Network layer device - OSI Layer 3</td>
+        </tr>
+        <tr>
+          <td>Operates using broadcasting</td>
+          <td>Operates based on MAC addresses</td>
+          <td>Operates based on IP addresses</td>
+        </tr>
+        <tr>
+          <td>Used to connect LAN components</td>
+          <td>Used by LAN</td>
+          <td>Used by both LAN and MAN</td>
+        </tr>
+        <tr>
+          <td>Needs at least one network to connect</td>
+          <td>Needs at least one network to connect</td>
+          <td>Connects at least two networks</td>
+        </tr>
+        <tr>
+          <td>Less expensive compared to switches and routers</td>
+          <td>More expensive than a hub</td>
+          <td>More expensive than a hub and switch</td>
+        </tr>
+        <tr>
+          <td>Sends binary bits of data between devices</td>
+          <td>Sends frames of data between devices</td>
+          <td>Sends packets of data between networks</td>
+        </tr>
+      </table>
+
+      <h1>Task 1.4</h1>
+      <p>
+        CSMA/CD stands for Carrier Sense Multiple Access with Collision
+        Detection. It is a network access method used in Ethernet networks to
+        manage how devices access the network medium (such as a shared cable) to
+        avoid data collisions.
+      </p>
+
+      <h2>Key Concepts:</h2>
+
+      <ul>
+        <li>
+          <strong>Carrier Sense (CS):</strong> Devices using CSMA/CD listen to
+          the network before transmitting data. If the network is idle (no
+          ongoing transmissions), they can proceed to send data.
+        </li>
+        <li>
+          <strong>Multiple Access (MA):</strong> Multiple devices share the same
+          network medium, such as a shared cable segment. CSMA/CD allows
+          multiple devices to access this shared medium.
+        </li>
+        <li>
+          <strong>Collision Detection (CD):</strong> If two devices attempt to
+          transmit data simultaneously and their signals collide, resulting in
+          data corruption, CSMA/CD detects this collision. When a collision is
+          detected, the transmitting devices stop, wait for a random backoff
+          time, and then retransmit.
+        </li>
+      </ul>
+
+      <p>
+        <strong>Collision: </strong>A collision occurs in a network when two or
+        more devices attempt to send data over the network medium
+        simultaneously. When collisions happen, the data sent by each device
+        becomes garbled and unusable, leading to a loss of transmission
+        efficiency.
+      </p>
+
+      <p>
+        <strong>Half Duplex: </strong>In half-duplex communication, devices can
+        both send and receive data, but not simultaneously. They can either
+        transmit or receive at any given time. With CSMA/CD, devices in a
+        half-duplex Ethernet network must listen to the network to check for
+        collisions while they are transmitting.
+      </p>
+
+      <p>
+        <strong>Full Duplex: </strong> In contrast, full-duplex communication
+        allows devices to transmit and receive data simultaneously, doubling the
+        potential throughput compared to half-duplex. Devices in a full-duplex
+        setup don't need to listen for collisions because they have dedicated
+        paths for sending and receiving data.
+      </p>
+
+      <p>
+        In modern Ethernet networks, especially in switched environments,
+        CSMA/CD is less relevant due to the prevalence of full-duplex
+        communication and switched networks. Most modern Ethernet standards,
+        such as Gigabit Ethernet and beyond, operate in full-duplex mode, and
+        CSMA/CD is not used in these scenarios.
+      </p>
+
+      <h1>Task 1.5</h1>
+      <p>
+        The Address Resolution Protocol (ARP) is an important protocol that can
+        map IP addresses to MAC addresses. It facilitates communication between
+        devices on the same network. Without ARP, software and devices would not
+        be able to send data to each other.
+      </p>
+
+      <p>
+        Detecting doubled IP addresses typically involves scenarios where two or
+        more devices on the same network mistakenly or maliciously have the same
+        IP address. This situation can lead to network conflicts and
+        communication issues. Here are some methods to detect doubled IP
+        addresses:
+      </p>
+
+      <ul>
+        <li>
+          <strong>ARP Conflict Detection:</strong> Detection method involving
+          unexpected ARP replies or inconsistencies in MAC-to-IP mappings.
+        </li>
+        <li>
+          <strong>Network Monitoring Tools:</strong> Specialized tools that
+          continuously scan the network, flagging duplicate IP addresses.
+        </li>
+        <li>
+          <strong>Network Auditing and Inventory:</strong> Regular audits and
+          maintaining IP address inventories to identify conflicting
+          assignments.
+        </li>
+        <li>
+          <strong>DHCP Lease Management:</strong> Monitoring DHCP logs or
+          management consoles for IP address conflicts when assigning leases.
+        </li>
+      </ul>
+
+      <p>
+        Resolving the conflict involves reassigning unique IP addresses to the
+        affected devices to ensure proper communication and prevent network
+        disruptions.
+      </p>
+
+      <h1>Task 1.6</h1>
+
+      <h3>BOOTP</h3>
+      <p>
+        BOOTP, or the Bootstrap Protocol, is a networking protocol used to
+        assign IP addresses to computers on a network. It is an early
+        predecessor of DHCP (Dynamic Host Configuration Protocol), and it can be
+        used to configure computers on a network without having to manually
+        enter the settings each time. BOOTP works by assigning an IP address
+        from a pool of available addresses, as well as other settings such as
+        DNS servers and default gateway information. The computer that requests
+        an IP address from the BOOTP server will then use this information to
+        configure its network interface card (NIC). BOOTP does not support IPv6,
+        so if you are looking for an IPv6-compatible protocol, DHCP is your best
+        option. DHCP stands for Dynamic Host Configuration Protocol and it
+        offers more features than BOOTP. It can be used for both IPv4 and IPv6
+        networks and it also supports additional features such as dynamic
+        address assignment, lease renewal, and more.
+      </p>
+
+      <h3>DHCP</h3>
+      <p>
+        Dynamic Host Configuration Protocol (DHCP) is a network protocol used to
+        assign IP addresses to devices on a network. It enables automatic
+        configuration of network devices, which simplifies the process of
+        connecting them to the internet. DHCP works by assigning unique IP
+        addresses to each device that connects to a network, allowing them to
+        communicate with each other and access resources on the network. It also
+        allows for more efficient management of IP address allocation and
+        provides additional security features such as authentication and
+        encryption. With DHCP, users can easily connect their computers,
+        tablets, and other devices quickly and securely without having to
+        manually configure their settings.
+      </p>
+      <h1>Task 1.7</h1>
+      <p>
+        A virtual LAN (VLAN) is a logical overlay network that groups together a
+        subset of devices that share a physical LAN, isolating the traffic for
+        each group. A VLAN, like the LAN it sits atop, operates at Layer 2 of
+        the network, the Ethernet level.
+        <br />
+        VLANs partition a single switched network into a set of overlaid virtual
+        networks that can meet different functional and security requirements.
+        This partitioning avoids the need to have multiple, distinct physical
+        networks for different use cases.
+
+        <br />
+        <br />
+        Network engineers use VLANs for multiple reasons, including the
+        following:
+      </p>
+
+      <ul>
+        <li>to improve performance</li>
+        <li>to tighten security</li>
+        <li>to ease administration</li>
+      </ul>
     </div>
 
     <div class="screenshots">
-        <h1 style="text-transform: uppercase; padding-bottom: 50px;">Practical Part</h1>
-        <h1>Task 2.1</h1>
-        <img style="width: 800px; height: 500px;" src="image/task2_2.1good.png" alt="">
-        <img style="width: 800px; height: 400px;" src="image/task2_2.1wireshark.png" alt="">
-        <img style="width: 800px; height: 500px;" src="image/2_2.1wireshark.png" alt="">
-        <h1>Task 2.2</h1>
-        <img style="width: 800px; height: 600px;" src="image/task2_2.2good.png" alt="">
-        <h1>Task 2.3</h1>
-        <img style="width: 800px; height: 500px;" src="image/task2_2.3.png" alt="">
-        <h1>Task 2.4</h1>
-        <img style="width: 800px; height: 600px;" src="image/task2_2.4good1.png" alt="">
-        <img style="width: 800px; height: 600px;" src="image/task2_2.4good.png" alt="">
-        <h1>Task 2.5</h1>
-        <img style="width: 800px; height: 100px;" src="image/2_2.5good.png" alt="">
-        <h1>Task 2.6</h1>
-        <img style="width: 800px; height: 600px;" src="image/task2_2.6_release1.png" alt="">
-        <img style="width: 800px; height: 200px;" src="image/task2_2.6_release2.png" alt="">
-        <img style="width: 800px; height: 500px;" src="image/task2_2.6_renew1.png" alt="">
-        <img style="width: 800px; height: 200px;" src="image/task2_2.6_renew2.png" alt="">
-        <h1>Task 2.7</h1>
-        <img style="width: 1000px; height: 600px;" src="image/task2_2.7_1.png" alt="">
-        <img style="width: 1000px; height: 700px;" src="image/task2_2.7_2.png" alt="">
+      <h1 style="text-transform: uppercase; padding-bottom: 50px">
+        Practical Part
+      </h1>
+      <h1>Task 2.1</h1>
+      <img
+        style="width: 800px; height: 500px"
+        src="image/task2_2.1good.png"
+        alt=""
+      />
+      <img
+        style="width: 800px; height: 400px"
+        src="image/task2_2.1wireshark.png"
+        alt=""
+      />
+      <img
+        style="width: 800px; height: 500px"
+        src="image/2_2.1wireshark.png"
+        alt=""
+      />
+      <h1>Task 2.2</h1>
+      <img
+        style="width: 800px; height: 600px"
+        src="image/task2_2.2good.png"
+        alt=""
+      />
+      <h1>Task 2.3</h1>
+      <img
+        style="width: 800px; height: 500px"
+        src="image/task2_2.3.png"
+        alt=""
+      />
+      <h1>Task 2.4</h1>
+      <img
+        style="width: 800px; height: 600px"
+        src="image/task2_2.4good1.png"
+        alt=""
+      />
+      <img
+        style="width: 800px; height: 600px"
+        src="image/task2_2.4good.png"
+        alt=""
+      />
+      <h1>Task 2.5</h1>
+      <img
+        style="width: 800px; height: 100px"
+        src="image/2_2.5good.png"
+        alt=""
+      />
+      <h1>Task 2.6</h1>
+      <img
+        style="width: 800px; height: 600px"
+        src="image/task2_2.6_release1.png"
+        alt=""
+      />
+      <img
+        style="width: 800px; height: 200px"
+        src="image/task2_2.6_release2.png"
+        alt=""
+      />
+      <img
+        style="width: 800px; height: 500px"
+        src="image/task2_2.6_renew1.png"
+        alt=""
+      />
+      <img
+        style="width: 800px; height: 200px"
+        src="image/task2_2.6_renew2.png"
+        alt=""
+      />
+      <h1>Task 2.7</h1>
+      <img
+        style="width: 1000px; height: 600px"
+        src="image/task2_2.7_1.png"
+        alt=""
+      />
+      <img
+        style="width: 1000px; height: 700px"
+        src="image/task2_2.7_2.png"
+        alt=""
+      />
     </div>
-
-</body>
-
+  </body>
 </html>
