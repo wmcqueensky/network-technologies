@@ -17,8 +17,16 @@
         }
 
         .theory {
-            text-align: center;
+            /* text-align: center; */
+            line-height: 22px;
+            padding-bottom: 40px;
         }
+        
+        h1, h2{
+            padding-top: 35px;
+        }
+
+        
     </style>
 </head>
 
@@ -28,20 +36,118 @@
 
         <h1>Task 1.1</h1>
         <div class="ip">
-            <p>IP addresses are the identifier that allows information to be sent between devices on a network: they contain location information and make devices accessible for communication. The internet needs a way to differentiate between different computers, routers, and websites. IP addresses provide a way of doing so and form an essential part of how the internet works. An IP address is a string of numbers separated by periods. IP addresses are expressed as a set of four numbers — an example address might be 192.158.1.38. Each number in the set can range from 0 to 255. So, the full IP addressing range goes from 0.0.0.0 to 255.255.255.255.</p>
+            <p>1. <strong>IP addresses </strong>are the identifier that allows information to be sent between devices on
+                a network: they
+                contain location information and make devices accessible for communication. The internet needs a way to
+                differentiate between different computers, routers, and websites. IP addresses provide a way of doing so
+                and form an essential part of how the internet works. An IP address is a string of numbers separated by
+                periods. IP addresses are expressed as a set of four numbers — an example address might be 192.158.1.38.
+                Each number in the set can range from 0 to 255. So, the full IP addressing range goes from 0.0.0.0 to
+                255.255.255.255.</p>
         </div>
 
         <div class="network-subnets">
-            <p>A subnet, or subnetwork, is a network inside a network. Subnets make networks more efficient. Through subnetting, network traffic can travel a shorter distance without passing through unnecessary routers to reach its destination.</p>
+            <p>2. <strong>Network subnets</strong> are networks inside a network. Subnets make networks more efficient.
+                Through
+                subnetting, network traffic can travel a shorter distance without passing through unnecessary routers to
+                reach its destination.</p>
         </div>
-        <div class="network-classes"></div>
-        <div class="network-mask"></div>
-        <div class="routing-table"></div>
-        <div class="default-gateway"></div>
-        <div class="broadcast"></div>
-        <div class="subnet-address"></div>
-        <div class="private-network-address"></div>
-        <div class="network-address-translation"></div>
+        <div class="network-classes">
+            <p>3. <strong>Network classes</strong> A, B, C offers addresses for networks of three distinct network
+                sizes. Class D is only used for
+                multicast, and class E reserved exclusively for experimental purposes.
+                <br>
+                Class A Network
+                This IP address class is used when there are a large number of hosts. In a Class A type of network, the
+                first 8 bits (also called the first octet) identify the network, and the remaining have 24 bits for the
+                host into that network.
+                <br>
+                Class B Network
+                In a B class IP address, the binary addresses start with 10. In this IP address, the class decimal
+                number that can be between 128 to 191.
+                <br>
+                Class C Network
+                Class C is a type of IP address that is used for the small network. In this class, three octets are used
+                to indent the network. This IP ranges between 192 to 223.
+                <br>
+                Class D Network
+                Class D addresses are only used for multicasting applications. Class D is never used for regular
+                networking operations.
+                <br>
+                Class E Network
+                Class E IP address is defined by including the starting four network address bits as 1, which allows you
+                two to incorporate addresses from 240.0.0.0 to 255.255.255.255. However, E class is reserved, and its
+                usage is never defined. Therefore, many network implementations discard these addresses as undefined or
+                illegal.
+            </p>
+        </div>
+        <div class="network-mask">
+            <p>
+                4. <strong>Network mask</strong> is represented as integer number and is the same for all hosts on a
+                given subnet.
+                The binary length of the mask is specific to a specific version of the IP protocol - it is the same as
+                the
+                length of the address. In the case of IPv4, it is 32 bits. Examples of masks: 255.255.255.0,
+                255.255.0.0,
+                255.0.0.0
+            </p>
+        </div>
+        <div class="routing-table">
+            <p> 5. <strong>Routing</strong> table is a set of rules, often viewed in table format, that is used to
+                determine where data
+                packets traveling over an Internet Protocol (IP) network will be directed. All IP-enabled devices,
+                including routers and switches, use routing tables.</p>
+        </div>
+        <div class="default-gateway"><strong>6. Default gateway</strong> is the piece of hardware that sits between
+            user's home network and
+            the rest of the internet. In most local networks, the default gateway is the Wi-Fi router. It allows user to
+            access servers and devices outside of their network — all the traffic they send and receive goes through it.
+            Without a default gateway, browsing the internet would be a much more laborious effort.</div>
+        <br>
+        <div class="broadcast">
+            <p>6. <strong>Broadcast</strong> means that the network delivers one copy of a packet to each destination.
+                Broadcasting is the process of sending data to all devices in a network, typically done using a
+                broadcast
+                address. It is a way to communicate with all devices on a subnet simultaneously.</p>
+        </div>
+        <div class="subnet-address">
+            <p>7. Consider IP address = 192.168.2.25
+                First few bitsidentify
+                network/subnet
+                Remaining bits identify host/interface
+                Number of subnet bits is called subnet mask,
+                e.g.
+                Subnet IP Address range is 192.168.2.0 -
+                192.168.2.255 or Mask = 255.255.255.0
+                Subnet IP Address range is 192.168.2.0 -
+                192.168.2.15 or Mask = 255.255.255.240</p>
+        </div>
+        <div class="private-network-address">
+            <p>8. <strong>Private network addresses</strong> are not routed on the
+                Internet, and no traffic can be
+                sent to them from the Internet; they are only supposed to work within the local network.
+                Private addresses include IP addresses from the following subnets:
+            <ul>
+                <li>Range from 10.0.0.0 to 10.255.255.255 — a 10.0.0.0 network with a 255.0.0.0 or /8 (an 8-bit) mask
+                </li>
+                <li>Range from 172.16.0.0 to 172.31.255.255 — a 172.16.0.0 network with a 255.240.0.0 or /12</li>
+                <li>A 192.168.0.0 to 192.168.255.255 range, which is a 192.168.0.0 network masked by 255.255.0.0 or /16
+                </li>
+                <li>A special range 100.64.0.0 to 100.127.255.255 with a 255.192.0.0 or /10 network mask</li>
+            </ul>
+
+            Those are reserved IP addresses. These addresses are intended for use in closed local area networks, and no
+            one globally controls the allocation of such addresses.
+            Direct access to the Internet from a private IP address is not possible. In this case, the connection to the
+            Internet must go through NAT (Network Address Translation replaces the private IP address with a public
+            one). Private IP addresses within the same local network must be unique and cannot duplicate.</p>
+        </div>
+        <div class="network-address-translation">
+            <p>9. <strong>Network Address Translation (NAT)</strong> is a process that enables one, unique
+                IP address to represent an entire group of computers. In network address translation, a network device,
+                often a router or NAT firewall, assigns a computer or computers inside a private network a public
+                address.</p>
+        </div>
     </div>
 
     <div class="screenshots">
@@ -68,27 +174,32 @@
 
         <h1>Task 2.6</h1>
         <h2>local network</h2>
-        <img src="image/myip1.png" alt="">
-        <img src="image/myip2.png" alt="">
+        <img style="height: 400px" src="image/myip1.png" alt="">
+        <img style="height: 400px" src="image/myip2.png" alt="">
         <h2>onet.pl</h2>
-        <img src="image/onet1.png" alt="">
-        <img src="image/onet2.png" alt="">
+        <img style="height: 400px" src="image/onet1.png" alt="">
+        <img style="height: 400px" src="image/onet2.png" alt="">
         <h2>google.com</h2>
-        <img src="image/googlecom1.png" alt="">
-        <img src="image/googlecom2.png" alt="">
+        <img style="height: 400px" src="image/googlecom1.png" alt="">
+        <img style="height: 400px" src="image/googlecom2.png" alt="">
         <h2>google.pl</h2>
-        <img src="image/googlepl1.png" alt="">
-        <img src="image/googlepl2.png" alt="">
+        <img style="height: 400px" src="image/googlepl1.png" alt="">
+        <img style="height: 400px" src="image/googlepl2.png" alt="">
         <h2>lodman.pl</h2>
-        <img src="image/lodman1.png" alt="">
-        <img src="image/lodman2.png" alt="">
+        <img style="height: 400px" src="image/lodman1.png" alt="">
+        <img style="height: 400px" src="image/lodman2.png" alt="">
 
         <h1>Task 2.7</h1>
-        <img src="" alt="">
+        <img style="height: 300px" src="image/local_tracert.png" alt="">
+        <img src="image/onet_tracert.png" alt="">
+        <img style="height: 400px" src="image/googlecom_tracert.png" alt="">
+        <img style="height: 400px" src="image/googlepl_tracert.png" alt="">
+        <img style="height: 400px" src="image/lodman_tracert.png" alt="">
+
 
         <h1>Task 2.8</h1>
-        <img src="image/2.8_1.png" alt="">
-        <img src="image/2.8_2.png" alt="">
+        <img style="height: 200px" src="image/2.8_1.png" alt="">
+        <img style="height: 450px" src="image/2.8_2.png" alt="">
 
     </div>
 </body>
