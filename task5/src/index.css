@@ -1,0 +1,74 @@
+/* index.css */
+
+body {
+  background-color: rgb(4, 4, 49);
+  color: white;
+  padding: 50px;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li::before {
+  content: "•";
+  margin-right: 0.5em;
+}
+
+.table-container {
+  margin-top: 30px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid white;
+  padding: 8px;
+  text-align: left;
+}
+
+.images {
+  width: 100%;
+}
+
+.images img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.text ul {
+  padding-left: 20px;
+}
+
+.text li {
+  margin-bottom: 10px;
+}
+
+.text li strong {
+  font-weight: bold;
+}
+
+.text p {
+  margin-bottom: 1.5em;
+}
