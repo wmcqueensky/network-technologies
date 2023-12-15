@@ -85,6 +85,7 @@ function App() {
         </tbody>
     </table>
 
+<br /><br />
     
     <p><strong>Top-Level Domains(TLDs)</strong> are the highest level of domain names in the Domain Name System (DNS) hierarchy. They are the last segment of a domain name, appearing after the last dot in the domain. TLDs play a crucial role in organizing and categorizing the vast number of domain names on the internet.</p>
 <p><strong>A DNS query</strong> is a demand for information sent from a user's computer (DNS client) to a DNS server. In most cases a DNS request is sent, to ask for the IP address associated with a domain name. An attempt to reach a domain, is actually a DNS client querying the DNS servers to get the IP address, related to that domain.</p>
