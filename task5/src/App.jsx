@@ -193,7 +193,9 @@ function App() {
         <p>A collection of names and addresses used to send material to multiple recipients, often inclusive of the subscribers to the list.</p>
 
         <h4>Email Gateway</h4>
-        <p>A defensive system providing real-time email security by filtering content (attachments, addresses, URLs) to prevent malicious software or harmful links.</p>
+        <p>A defensive system providing real-time email security by filtering content (attachments, addresses, URLs) to prevent
+          malicious software or harmful links.
+        </p>
 
         <h4>Email Security</h4>
         <p>Measures protecting email accounts, content, and communication against unauthorized access, including SSL and TLS protocols that ensure privacy and authenticity.</p>
@@ -219,6 +221,28 @@ function App() {
         <h1 className="section-heading">
           Practical Part
         </h1>
+
+        <h2>Mail system</h2>
+        <div className='screenshots'>
+          <h2>2.1.1.</h2>
+          <img src={image1} alt='' style={{ width: '1000px', height: 'auto', maxHeight: '800px' }}></img>
+          <img src={image2} alt='' style={{ width: '1000px', height: 'auto', maxHeight: '800px' }}></img>
+          <img src={image3} alt='' style={{ width: '1000px', height: 'auto', maxHeight: '800px' }}></img>
+          <img src={image4} alt='' style={{ width: '1000px', height: 'auto', maxHeight: '800px' }}></img>
+          <h2>2.1.2.</h2>
+          <img src={image7} alt='' style={{ width: '1000px', height: 'auto', maxHeight: '800px' }}></img>
+          <img src={image8} alt='' style={{ width: '1000px', height: 'auto', maxHeight: '800px' }}></img>
+          <img src={image9} alt='' style={{ width: '1000px', height: 'auto', maxHeight: '800px' }}></img>
+          <img src={image10} alt='' style={{ width: '1000px', height: 'auto', maxHeight: '800px' }}></img>
+          <h2>2.1.3.</h2>
+          <img src={image11} alt='' style={{ width: '1000px', height: 'auto', maxHeight: '800px' }}></img>
+          <img src={image12} alt='' style={{ width: '1000px', height: 'auto', maxHeight: '800px' }}></img>
+          <img src={image13} alt='' style={{ width: '1000px', height: 'auto', maxHeight: '800px' }}></img>
+          <img src={image14} alt='' style={{ width: '1000px', height: 'auto', maxHeight: '800px' }}></img>
+          <h2>2.1.4.</h2>
+          <img src={image5} alt='' style={{ width: '1000px', height: 'auto', maxHeight: '800px' }}></img>
+          <img src={image6} alt='' style={{ width: '1000px', height: 'auto', maxHeight: '800px' }}></img>
+        </div>
       </div>
     </>
   );
