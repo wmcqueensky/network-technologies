@@ -1,15 +1,17 @@
 import React from 'react';
 import image1 from './images/2.1.2.1.png'
-import image2 from '/images/2.1.2.2_2.png'
-import image3 from '/images/2.1.2.2.png'
-import image4 from '/images/2.1.2.3.png'
-import image5 from '/images/2.1.2.6.png'
-import image6 from '/images/2.1.1_2.png'
-import image7 from '/images/2.1.1_3.png'
-import image8 from '/images/2.1.1.png'
-import image9 from '/images/2.2.2.1.png'
-import image10 from '/images/2.2.2.2.png'
-import image11 from '/images/2.2.2.3.png'
+import image2 from './images/2.1.2.2_2.png'
+import image3 from './images/2.1.2.2.png'
+// import image4 from './images/2.1.2.3.png'
+// import image5 from './images/2.1.2.6.png'
+// import image6 from './images/2.1.1_2.png'
+// import image7 from './images/2.1.1_3.png'
+// import image8 from './images/2.1.1.png'
+import image9 from './images/2.2.2.1.png'
+import image10 from './images/2.2.2.2.png'
+import image11 from './images/2.2.2.3.png'
+import image12 from './images/2.2.1.png'
+
 
 
 function App() {
@@ -234,26 +236,26 @@ function App() {
           Practical Part
         </h1>
 
+        <h2>DNS system</h2>
+        <h3>2.2.1.  Configure Thunderbird to send and receive e-mails from studife.it.p.lodz.pl</h3>
+        <img src={image12} alt='' style={{ width: '1000px', height: 'auto', maxHeight: '800px' }}></img>
+        <h3>2.2.2.1. non-existent mail server</h3>
+        <img src={image9} alt='' style={{ width: '1000px', height: 'auto', maxHeight: '800px' }}></img>
+        <h3>2.2.2.2. non-existent mail server</h3>
+        <img src={image10} alt='' style={{ width: '1000px', height: 'auto', maxHeight: '800px' }}></img>
+        <h3>2.2.2.3. non-existent mail server</h3>
+        <img src={image11} alt='' style={{ width: '1000px', height: 'auto', maxHeight: '800px' }}></img>
+
         <h2>Mail system</h2>
         <div className='screenshots'>
-          <h2>2.1.1.</h2>
-          <img src={image1} alt='' style={{ width: '1000px', height: 'auto', maxHeight: '800px' }}></img>
-          <img src={image2} alt='' style={{ width: '1000px', height: 'auto', maxHeight: '800px' }}></img>
-          <img src={image3} alt='' style={{ width: '1000px', height: 'auto', maxHeight: '800px' }}></img>
-          <img src={image4} alt='' style={{ width: '1000px', height: 'auto', maxHeight: '800px' }}></img>
-          <h2>2.1.2.</h2>
-          <img src={image7} alt='' style={{ width: '1000px', height: 'auto', maxHeight: '800px' }}></img>
-          <img src={image8} alt='' style={{ width: '1000px', height: 'auto', maxHeight: '800px' }}></img>
-          <img src={image9} alt='' style={{ width: '1000px', height: 'auto', maxHeight: '800px' }}></img>
-          <img src={image10} alt='' style={{ width: '1000px', height: 'auto', maxHeight: '800px' }}></img>
-          <h2>2.1.3.</h2>
-          <img src={image11} alt='' style={{ width: '1000px', height: 'auto', maxHeight: '800px' }}></img>
+          <h3>2.2.1.  Configure Thunderbird to send and receive e-mails from studife.it.p.lodz.pl</h3>
           <img src={image12} alt='' style={{ width: '1000px', height: 'auto', maxHeight: '800px' }}></img>
-          <img src={image13} alt='' style={{ width: '1000px', height: 'auto', maxHeight: '800px' }}></img>
-          <img src={image14} alt='' style={{ width: '1000px', height: 'auto', maxHeight: '800px' }}></img>
-          <h2>2.1.4.</h2>
-          <img src={image5} alt='' style={{ width: '1000px', height: 'auto', maxHeight: '800px' }}></img>
-          <img src={image6} alt='' style={{ width: '1000px', height: 'auto', maxHeight: '800px' }}></img>
+          <h3>2.2.2.1. non-existent mail server</h3>
+          <img src={image9} alt='' style={{ width: '1000px', height: 'auto', maxHeight: '800px' }}></img>
+          <h3>2.2.2.2. non-existent mail server</h3>
+          <img src={image10} alt='' style={{ width: '1000px', height: 'auto', maxHeight: '800px' }}></img>
+          <h3>2.2.2.3. non-existent mail server</h3>
+          <img src={image11} alt='' style={{ width: '1000px', height: 'auto', maxHeight: '800px' }}></img>
         </div>
       </div>
     </>
