@@ -13,34 +13,95 @@ function App() {
         <h2>DNS system</h2>
         
         <h4>Top Level Domains</h4>
-        <p>IANA distinguishes the following group of top-level domains:</p>
+        
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>.com</td>
+                <td>Commercial websites</td>
+            </tr>
+            <tr>
+                <td>.org</td>
+                <td>Organizations (typically non-profit)</td>
+            </tr>
+            <tr>
+                <td>.net</td>
+                <td>Network infrastructure</td>
+            </tr>
+            <tr>
+                <td>.int</td>
+                <td>International organizations</td>
+            </tr>
+            <tr>
+                <td>.edu</td>
+                <td>Educational institutions</td>
+            </tr>
+            <tr>
+                <td>.gov</td>
+                <td>U.S. government entities</td>
+            </tr>
+            <tr>
+                <td>.mil</td>
+                <td>U.S. military</td>
+            </tr>
+        </tbody>
+    </table>
 
-        <h4>Infrastructure Top-Level Domains (ARPA)</h4>
-        <p>These domains manage technical network infrastructure. Includes subdomains like in-addr.arpa for reverse DNS lookup of IPv4 addresses.</p>
+    <h2>Domain Hierarchy</h2>
+    
+    <p><strong>Root Domain:</strong> The root domain is at the top of the DNS tree structure, denoted by a single dot (.). It signifies the beginning of the hierarchy and is the starting point for all DNS resolutions.</p>
 
-        <h4>Generic Top-Level Domains (gTLD)</h4>
-        <p>Initially called “general purpose domains.” Unrestricted gTLDs are available for registration by any person or organization for any use.</p>
+    <p><strong>Top-Level Domains (TLDs):</strong> Below the root domain are the TLDs, such as .com, .org, .net, and country-specific TLDs like .uk or .de. Different organizations manage TLDs and are responsible for specific types of websites.</p>
 
-        <h4>Generic-Restricted Top-Level Domains (grTLD)</h4>
-        <p>Similar to gTLDs but have specific requirements for registration.</p>
+    <p><strong>Second-Level Domains:</strong> After the TLDs, we have second-level domains, the primary domains individuals or organizations register.</p>
 
-        <h4>Sponsored Top-Level Domains (sTLD)</h4>
-        <p>Specialized domains with sponsors representing a specific community served by the domain.</p>
+    <p><strong>Subdomains:</strong> Subdomains are additional levels within a domain. They can be used to create distinct website sections or serve specific purposes.</p>
 
-        <h4>Country Code Top-Level Domains (ccTLD)</h4>
-        <p>Domains generally used or reserved for countries, sovereign states, or dependent territories identified with a country code. All ASCII ccTLD identifiers are two-letter longs.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Domain Level</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Root Domain</td>
+            </tr>
+            <tr>
+                <td>Top-Level Domain (TLD)</td>
+            </tr>
+            <tr>
+                <td>Second-Level Domain</td>
+            </tr>
+            <tr>
+                <td>Subdomain</td>
+            </tr>
+        </tbody>
+    </table>
 
-        <h4>Internationalized Top-Level Domains (IDNs)</h4>
-        <p>Specially encoded domains displayed in an end-user application, like a web browser, in language-native scripts (e.g., Arabic alphabet) or non-alphabet writing systems (e.g., Chinese characters).</p>
+    
+    <p><strong>Top-Level Domains(TLDs)</strong> are the highest level of domain names in the Domain Name System (DNS) hierarchy. They are the last segment of a domain name, appearing after the last dot in the domain. TLDs play a crucial role in organizing and categorizing the vast number of domain names on the internet.</p>
+<p><strong>A DNS query</strong> is a demand for information sent from a user's computer (DNS client) to a DNS server. In most cases a DNS request is sent, to ask for the IP address associated with a domain name. An attempt to reach a domain, is actually a DNS client querying the DNS servers to get the IP address, related to that domain.</p>
 
-        <h4>Test Top-Level Domains (tTLD)</h4>
-        <p>Domains reserved by the Internet Engineering Task Force (IETF) for software testing.</p>
+<p><strong>DNS delegation</strong> is the process by which a parent DNS zone indicates to DNS resolvers that it has delegated the authority for a DNS subzone (or child zone) to a different set of DNS servers. This allows the DNS resolvers to locate and query the delegated DNS servers for the subzone’s DNS records.</p>
 
-        <h4>Early Generic Top-Level Domains</h4>
-        <p>In the early Internet stages before ICANN, seven gTLDs were created:</p>
+<p><strong>DNS records</strong> (aka zone files) are instructions that live in authoritative DNS servers and provide information about a domain including what IP address is associated with that domain and how to handle requests for that domain</p>
 
-        <h4>Hierarchical Structure of Domain Name System (DNS)</h4>
-        <p>The DNS uses a hierarchy in a tree structure. The root domain sits at the top, followed by top-level domains, then further divided into subdomains.</p>
+<p><strong>Reverse DNS</strong> lookup is a DNS query for the domain name associated with a given IP address. This accomplishes the opposite of the more commonly used forward DNS lookup, in which the DNS system is queried to return an IP address.</p>
+
+<p><strong>Authoritative answer</strong> comes from a nameserver that is considered authoritative for the domain which it's returning a record for (one of the nameservers in the list for the domain you did a lookup on), and a <strong>non-authoritative answer</strong> comes from anywhere else (a nameserver not in the list for the domain you did a lookup on).</p>
+
+<p><strong>DNS resolver</strong> , also known as a resolver, is a server on the Internet that converts domain names into IP addresses. Below is an example of your computer's communication with DNS (Domain Name System) to resolve a domain name into an IP address.</p>
+
+<p><strong>DNS cache</strong> is a temporary DNS storage on a device (your computer, smartphone, server, etc.) that contains DNS records of already visited domain names (A records for IPv4 addresses, AAAA records for IPv6, etc.). It keeps those records, depending on their time-to-live (TTL). </p>
+
+<p><strong>/etc/hosts file</strong> contains the Internet Protocol (IP) host names and addresses for the local host and other hosts in the Internet network. This file is used to resolve a name into an address (that is, to translate a host name into its Internet address). When your system is using a name server, the file is accessed only if the name server cannot resolve the host name.</p>
 
       <h2>Mail system</h2>
 
