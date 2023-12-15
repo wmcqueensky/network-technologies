@@ -1,4 +1,16 @@
 import React from 'react';
+import image1 from './images/2.1.2.1.png'
+import image2 from '/images/2.1.2.2_2.png'
+import image3 from '/images/2.1.2.2.png'
+import image4 from '/images/2.1.2.3.png'
+import image5 from '/images/2.1.2.6.png'
+import image6 from '/images/2.1.1_2.png'
+import image7 from '/images/2.1.1_3.png'
+import image8 from '/images/2.1.1.png'
+import image9 from '/images/2.2.2.1.png'
+import image10 from '/images/2.2.2.2.png'
+import image11 from '/images/2.2.2.3.png'
+
 
 function App() {
   return (
